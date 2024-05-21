@@ -8,7 +8,8 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - npm install -g hexo
+      - sudo chown -R 65534:0 "/root/.npm"
+      - npm install -g hexo-cli
       - npm install
   # ビルド時に実行するコマンド
   build:
