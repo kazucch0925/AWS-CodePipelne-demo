@@ -6,10 +6,10 @@ phases:
   install:
     # どのランタイムを使用するか定義
     runtime-versions:
-      nodejs: latest
+      nodejs: 12
     commands:
       - sudo chown -R 65534:0 "/root/.npm"
-      - npm install -g hexo-cli
+      - npm install -g --unsafe-perm hexo-cli
       - npm install
   # ビルド時に実行するコマンド
   build:
