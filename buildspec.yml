@@ -6,7 +6,7 @@ phases:
   install:
     # どのランタイムを使用するか定義
     runtime-versions:
-      nodejs: 12
+      nodejs: latest
     commands:
       - sudo chown -R 65534:0 "/root/.npm"
       - npm install -g hexo-cli
